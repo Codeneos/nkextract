@@ -4,14 +4,34 @@ nkextract
 Extract Gallery Images from NK.pl
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
-[![Version](https://img.shields.io/npm/v/nkextract.svg)](https://npmjs.org/package/nkextract)
-[![Downloads/week](https://img.shields.io/npm/dw/nkextract.svg)](https://npmjs.org/package/nkextract)
-[![License](https://img.shields.io/npm/l/nkextract.svg)](https://github.com/Codeneos/nkextract/blob/master/package.json)
 
 <!-- toc -->
 * [Usage](#usage)
 * [Commands](#commands)
 <!-- tocstop -->
+# Installation
+### Prerequisites
+* Installed git; Windows users click **[here](https://git-scm.com/download/win)** to download the latest version
+* NodeJS LTS version 12+; for all platforms download from **[here](https://nodejs.org/en/download/)**
+* Comfortable with using Bash or PowerShell
+
+### Step-by-step
+* After installing all **Prerequisites** open a new Powershell or Command window.
+* Check out the nkextract from github enter the following command:
+  ```sh-session
+  git clone https://github.com/Codeneos/nkextract.git
+  ```
+* Install nkextract
+  ```sh-session
+  npm install
+  npm run prepack
+  npm link --force
+  ```
+* Extract private gallery images using the following command:
+  ```sh-session
+  nkextract profile
+  ```
+
 # Usage
 <!-- usage -->
 ```sh-session
