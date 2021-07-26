@@ -1,0 +1,60 @@
+{
+  "name": "nkextract",
+  "description": "Extract Gallery Images from NK.pl",
+  "version": "1.0.0",
+  "author": "Peter van Gulik (p.w.van.gulik@gmail.com)",
+  "bin": {
+    "nkextract": "./bin/run"
+  },
+  "bugs": "https://github.com/Codeneos/nkextract/issues",
+  "devDependencies": {
+    "@oclif/dev-cli": "^1.26.0",
+    "@types/fs-extra": "^8.0.1",
+    "@types/inquirer": "^7.3.3",
+    "@types/node": "^10.17.60",
+    "globby": "^10.0.2",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.1.0",
+    "typescript": "^4.3.5"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/lib",
+    "/npm-shrinkwrap.json",
+    "/oclif.manifest.json"
+  ],
+  "homepage": "https://github.com/Codeneos/nkextract",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "oclif": {
+    "commands": "./lib/commands",
+    "bin": "nkextract",
+    "plugins": [
+      "@oclif/plugin-help"
+    ]
+  },
+  "repository": "Codeneos/nkextract",
+  "scripts": {
+    "postpack": "rimraf oclif.manifest.json",
+    "prepack": "rimraf lib && tsc -b && oclif-dev manifest && oclif-dev readme",
+    "test": "echo NO TESTS",
+    "version": "oclif-dev readme && git add README.md",
+    "watch": "tsc -w"
+  },
+  "types": "lib/index.d.ts",
+  "dependencies": {
+    "@oclif/command": "^1.8.0",
+    "@oclif/config": "^1.17.0",
+    "@oclif/plugin-help": "^3.2.2",
+    "fs-extra": "^8.1.0",
+    "inquirer": "^8.1.2",
+    "puppeteer": "^10.1.0",
+    "tslib": "^1.14.1"
+  }
+}
