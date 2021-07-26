@@ -23,6 +23,7 @@ Extract Gallery Images from NK.pl
   ```
 * Install nkextract
   ```sh-session
+  cd nkextract
   npm install
   npm run prepack
   npm link --force
