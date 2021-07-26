@@ -48,31 +48,9 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`nkextract hello [FILE]`](#nkextract-hello-file)
 * [`nkextract help [COMMAND]`](#nkextract-help-command)
 * [`nkextract profile`](#nkextract-profile)
-* [`nkextract profile copy`](#nkextract-profile-copy)
 * [`nkextract public GALLERY`](#nkextract-public-gallery)
-
-## `nkextract hello [FILE]`
-
-describe the command here
-
-```
-USAGE
-  $ nkextract hello [FILE]
-
-OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
-
-EXAMPLE
-  $ nkextract hello
-  hello world from ./src/hello.ts!
-```
-
-_See code: [src/commands/hello.ts](https://github.com/Codeneos/nkextract/blob/v1.0.0/src/commands/hello.ts)_
 
 ## `nkextract help [COMMAND]`
 
@@ -106,22 +84,6 @@ OPTIONS
 ```
 
 _See code: [src/commands/profile.ts](https://github.com/Codeneos/nkextract/blob/v1.0.0/src/commands/profile.ts)_
-
-## `nkextract profile copy`
-
-Extract private gallery images NK.pl
-
-```
-USAGE
-  $ nkextract profile copy
-
-OPTIONS
-  -h, --[no-]headless                  display the Chrome bowrser when extracting images
-  -p, --password=password              password used for the NK.pl login
-  -u, --user=username@example.com.org  username used for the NK.pl login
-```
-
-_See code: [src/commands/profile copy.ts](https://github.com/Codeneos/nkextract/blob/v1.0.0/src/commands/profile copy.ts)_
 
 ## `nkextract public GALLERY`
 
